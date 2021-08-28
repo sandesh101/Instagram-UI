@@ -27,6 +27,50 @@ class _HomePageState extends State<HomePage> {
       body: Center(
         child: Text('Instagram'),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home_filled,
+              color: Colors.black,
+              size: 25,
+            ),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.search,
+              color: Colors.black,
+              size: 25,
+            ),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.add_box_outlined,
+              color: Colors.black,
+              size: 25,
+            ),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.shopping_bag_outlined,
+              color: Colors.black,
+              size: 25,
+            ),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.account_circle,
+              color: Colors.black,
+              size: 25,
+            ),
+            label: '',
+          ),
+        ],
+      ),
     );
   }
 }
