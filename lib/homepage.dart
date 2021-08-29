@@ -28,6 +28,10 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Column(children: [
         Stories(),
+        Divider(
+          color: Colors.black45,
+          thickness: 0.5,
+        ),
       ]),
       bottomNavigationBar: BottomNavigationBar(
         items: [
