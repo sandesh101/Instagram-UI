@@ -27,14 +27,18 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-      body: Column(children: [
-        Stories(),
-        Divider(
-          color: Colors.black45,
-          thickness: 0.5,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Stories(),
+            Divider(
+              color: Colors.black45,
+              thickness: 0.5,
+            ),
+            Posts(),
+          ],
         ),
-        Posts()
-      ]),
+      ),
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(

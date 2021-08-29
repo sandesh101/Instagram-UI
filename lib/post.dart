@@ -111,8 +111,34 @@ class Posts extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        instaPost('assets/sandesh.jpg', 'sandesh_rimal',
-            'assets/butterfly.jpeg', '999', 'Be a butterfly.'),
+        instaPost(
+          'assets/sandesh.jpg',
+          'sandesh_rimal',
+          'assets/butterfly.jpeg',
+          '999',
+          'Be a butterfly.',
+        ),
+        instaPost(
+          'assets/bhudi.png',
+          'mr.bhudi',
+          'assets/Shyambhu.jpeg',
+          '1024',
+          'Stand Tall.',
+        ),
+        instaPost(
+          'assets/rohit.jpg',
+          'rohitsharma',
+          'assets/rohit_ipl.jpg',
+          '154367',
+          'Iss bar bhi IPL hamari hai.',
+        ),
+        instaPost(
+          'assets/radhika.jpg',
+          'radhikamadan',
+          'assets/butterfly.jpeg',
+          '99999',
+          'Be a butterfly.',
+        ),
       ],
     );
   }
