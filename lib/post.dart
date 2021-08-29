@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Posts extends StatelessWidget {
-  Widget instaPost(String asset, String name, String image) {
+  Widget instaPost(
+      String asset, String name, String image, String likes, String title) {
     return SingleChildScrollView(
       child: Column(
         children: [
@@ -71,6 +72,36 @@ class Posts extends StatelessWidget {
               ),
             ],
           ),
+          Column(
+            children: [
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
+                    child: Text(
+                      '$likes Likes',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
+                    child: Text(
+                      '$name',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 2,
+                  ),
+                  Text('$title'),
+                ],
+              ),
+            ],
+          ),
         ],
       ),
     );
@@ -80,8 +111,8 @@ class Posts extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        instaPost(
-            'assets/sandesh.jpg', 'sandesh_rimal', 'assets/butterfly.jpeg'),
+        instaPost('assets/sandesh.jpg', 'sandesh_rimal',
+            'assets/butterfly.jpeg', '999', 'Be a butterfly.'),
       ],
     );
   }
