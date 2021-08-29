@@ -33,6 +33,44 @@ class Posts extends StatelessWidget {
           ),
           SizedBox(height: 10),
           Image.asset('$image'),
+          SizedBox(height: 8.0),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.favorite_outline,
+                      color: Colors.black,
+                      size: 30,
+                    ),
+                    SizedBox(width: 10),
+                    Icon(
+                      Icons.comment_rounded,
+                      color: Colors.black,
+                      size: 30,
+                    ),
+                    SizedBox(width: 10),
+                    Icon(
+                      Icons.send,
+                      color: Colors.black,
+                      size: 30,
+                    ),
+                  ],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(right: 8.0),
+                child: Icon(
+                  Icons.bookmark_border,
+                  color: Colors.black,
+                  size: 30,
+                ),
+              ),
+            ],
+          ),
         ],
       ),
     );
