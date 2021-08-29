@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'stories.dart';
+
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -24,9 +26,9 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-      body: Center(
-        child: Text('Instagram'),
-      ),
+      body: Column(children: [
+        Stories(),
+      ]),
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
