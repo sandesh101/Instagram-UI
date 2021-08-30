@@ -100,6 +100,34 @@ class Posts extends StatelessWidget {
                   Text('$title'),
                 ],
               ),
+              SizedBox(height: 10),
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
+                    child: Text(
+                      'View all 99 comments',
+                      style: TextStyle(color: Colors.black45),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: 10),
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage('assets/bhudi.png'),
+                    ),
+                  ),
+                  SizedBox(width: 10),
+                  Text(
+                    'Add a comment..',
+                    style: TextStyle(color: Colors.black45),
+                  ),
+                ],
+              ),
             ],
           ),
         ],
