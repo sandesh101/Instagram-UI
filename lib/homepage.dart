@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_clone/bottom_nav_bar.dart';
 import 'package:instagram_clone/post.dart';
 
 import 'stories.dart';
@@ -37,7 +36,6 @@ class _HomePageState extends State<HomePage> {
               thickness: 0.5,
             ),
             Posts(),
-            BottomBar(),
           ],
         ),
       ),
