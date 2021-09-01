@@ -118,7 +118,27 @@ class _AccountState extends State<Account> {
               ],
             ),
           ),
-          SizedBox(height: 5),
+          SizedBox(height: 15),
+          Container(
+            // height: 20,
+            margin: EdgeInsets.all(10),
+            width: double.infinity,
+            decoration: BoxDecoration(
+              border: Border.all(width: 1, color: Colors.black54),
+              borderRadius: BorderRadius.all(
+                Radius.circular(4.0),
+              ),
+            ),
+            child: Center(
+              child: Padding(
+                padding: const EdgeInsets.all(5.0),
+                child: Text(
+                  'Edit Profile',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
