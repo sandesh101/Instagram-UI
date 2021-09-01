@@ -33,6 +33,7 @@ class _AccountState extends State<Account> {
         ],
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Divider(
             color: Colors.black45,
@@ -93,6 +94,31 @@ class _AccountState extends State<Account> {
               )
             ],
           ),
+          SizedBox(height: 5),
+          Padding(
+            padding: const EdgeInsets.only(left: 15.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Sandesh Rmal',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  'Personal Blog',
+                  style: TextStyle(fontSize: 18, color: Colors.black45),
+                ),
+                Text(
+                  'FOCUS.CAPTURE.POST',
+                  style: TextStyle(fontSize: 18),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(height: 5),
         ],
       ),
     );
