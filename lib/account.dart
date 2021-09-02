@@ -6,6 +6,9 @@ class Account extends StatefulWidget {
 }
 
 class _AccountState extends State<Account> {
+  // double _heightCard = 150.0;
+  // double _widthCard = 150.0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -202,6 +205,14 @@ class _AccountState extends State<Account> {
                   ),
                 ),
               ),
+            ],
+          ),
+          SizedBox(height: 20),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Icon(Icons.grid_on, size: 30),
+              Icon(Icons.portrait_outlined, size: 30),
             ],
           ),
         ],
