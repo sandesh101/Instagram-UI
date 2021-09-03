@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'posts_account.dart';
 
 class Account extends StatefulWidget {
   @override
@@ -215,6 +216,7 @@ class _AccountState extends State<Account> {
               Icon(Icons.portrait_outlined, size: 30),
             ],
           ),
+          PostAccount(),
         ],
       ),
     );
